@@ -12,4 +12,28 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   
+  // Create a variable to reference the database
+  var database = firebase.database();
+
+  // Execute below function when a user click 'Submit' button in the form
+  $("#submit-button").on("click", function(event) {
+      event.preventDefault();
+
+    // Get user inputs from the form
+    var nameInput = $("#train-name-input").val().trim();
+    var destinationInput = $("#destination-input").val().trim();
+    var startTimeInput = $("#first-train-time-input").val().trim();
+    var frequencyInput = $("#frequency-input").val().trim();
+    
+    // Create local temporary objects for holding the train data
+    var newTrain = {
+        name: nameInput,
+        dest: destinationInput,
+        start: startTimeInput,
+        frequency: frequencyInput
+    };
+
+    
+
+  });
   
