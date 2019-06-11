@@ -13,10 +13,10 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cute+Font|Kirang+Haerang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
 
     <!-- CSS link -->
-    <link rel="stylesheet" href="style.css"
-    >
+    <link rel="stylesheet" href="style.css">
     <!-- Firebase Reference -->
     <!-- <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script> -->
@@ -41,7 +41,8 @@
         <!-- Current Train Schedule Table -->
         <div class="row">
             <div class="col-md-12">
-                <div class="card">
+
+                <div class="card mb-3">
                     <div class="card-header bg-secondary text-white">Current Train Schedule</div>
                     <div class="card-body">
                         <table class="table table-sm table-hover" id="train-schedule">
@@ -55,8 +56,37 @@
                                 </tr>
                             </thead>
 
+                            <!-- Static Example of one train (Thomas) to be listed on the table -->
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Thomas</th>
+                                    <td>Abbey Station</td>
+                                    <td>20</td>
+                                    <td>09:00 AM</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Train Section -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <div class="card-header bg-secondary text-white">Add Train</div>
+                    <div class="card-body">
+
+                        <!-- Entry Form -->
+                        <form>
+                            <div class="form-group">
+                                
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
