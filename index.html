@@ -51,7 +51,7 @@
                                     <th scope="col">Train Name</th>
                                     <th scope="col">Destination</th>
                                     <th scope="col">Frequency (min)</th>
-                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Next Arrival (HH:MM)</th>
                                     <th scope="col">Minutes Away</th>
                                 </tr>
                             </thead>
@@ -62,7 +62,7 @@
                                     <th scope="row">Thomas</th>
                                     <td>Abbey Station</td>
                                     <td>20</td>
-                                    <td>09:00 AM</td>
+                                    <td>09:00</td>
                                     <td>5</td>
                                 </tr>
                             </tbody>
@@ -83,7 +83,19 @@
                         <form>
                             <div class="form-group">
                                 <label for="train-name-input">Train Name</label>
-                                <input type="name" class="form-control" id="train-name-input" placeholder="Percy">
+                                <input type="name" class="form-control" id="train-name-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="destination-input">Destination</label>
+                                <input type="name" class="form-control" id="destination-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="first-train-time-input">First Train Time (HH:MM - Military Time)</label>
+                                <input type="time" class="form-control" id="first-train-time-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="frequency-input">Frequency in Minutes</label>
+                                <input type="number" class="form-control" id="frequency-input">
                             </div>
                         </form>
                     </div>
@@ -92,6 +104,10 @@
             </div>
         </div>
 
+        <!-- Footer Section -->
+        <footer class="text-center">
+            By Mari &copy; 2019
+        </footer>
     </div>
 
 </body>
