@@ -22,16 +22,45 @@ var firebaseConfig = {
     // Get user inputs from the form
     var nameInput = $("#train-name-input").val().trim();
     var destinationInput = $("#destination-input").val().trim();
-    var startTimeInput = $("#first-train-time-input").val().trim();
+    var firstTrainTimeInput = $("#first-train-time-input").val().trim();
     var frequencyInput = $("#frequency-input").val().trim();
     
     // Create local temporary objects for holding the train data
     var newTrain = {
         name: nameInput,
         dest: destinationInput,
-        start: startTimeInput,
+        start: firstTrainTimeInput,
         frequency: frequencyInput
     };
+
+    // Calculate the next train arrival: 
+    /* Put argument 'newTrain.start' in moment.unix to get the standardized unix time, then
+       subtract one year to ensure you are not calculating with future date. */
+
+    var firstTimeConverted = moment.unix(newTrain.start).subtract(1, "years");
+    console.log("FIRST TIME: " + firstTimeConverted);
+
+    // Current Time
+    var currentTime = moment();
+    console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+
+    // Difference between the times
+    var diffTime = moment().diff(moment(firstTimeCoverted), "minutes");
+    console.log("DIFFERENCE IN TIME: " + diffTime);  
+  
+    // Times apart (i.e. Remainder)
+    var remainderTime = diffTime % newTrain.frequency;
+    console.log(remainderTime);
+
+    // Minutes until the next train
+    var minutesAway = newTrain.frequency - minutesAway;
+    console.log("MINUTES AWAY UNTIL NEXT TRAIN: " + minutesAway);
+    
+    // Next Train
+    var nextTrain = moment().add(minutesAway, "minutes");
+    console.log("NEXT ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+
+    
 
     
 
