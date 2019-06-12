@@ -3,5 +3,8 @@
     background-color: rgb(3, 3, 109);
 };
 
-
+#currentTime {
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
 
