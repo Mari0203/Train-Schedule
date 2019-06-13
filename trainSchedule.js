@@ -15,8 +15,6 @@ firebase.initializeApp(firebaseConfig);
 // Create a variable to reference the database
 var database = firebase.database();
 
-console.log("lalala");
-
 // Show current time in Jumbotron
 setInterval(function() {
   var currentTime = moment().format("h:mm:ss");
@@ -47,7 +45,7 @@ $("#submit-button").on("click", function(event) {
 
   // Current Time
   var currentTime = moment();
-  console.log("CURRENT TIME: " + moment(currentTime).format("hh:mm"));
+  console.log("CURRENT TIME: " + moment(currentTime).format("HH:mm"));
 
   // Difference between the times
   var diffTime = moment().diff(moment(firstTimeConverted), "minutes");
@@ -63,12 +61,12 @@ $("#submit-button").on("click", function(event) {
 
   // Next Train
   var nextTrain = moment().add(minutesAway, "minutes");
-  console.log("NEXT ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
+  console.log("NEXT ARRIVAL TIME: " + moment(nextTrain).format("HH:mm"));
 
   //add new properties to newTrain object
   newTrain.minToNextTrain = minutesAway;
 
-  newTrain.nextArrivalTime = moment(nextTrain).format("hh:mm a");
+  newTrain.nextArrivalTime = moment(nextTrain).format("HH:mm");
 
   // Uploads train data to the Firebase database
   database.ref().push(newTrain);
