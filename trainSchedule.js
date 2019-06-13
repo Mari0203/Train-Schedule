@@ -42,9 +42,6 @@ $("#submit-button").on("click", function(event) {
   };
 
   // Calculate the next train arrival:
-  /* Put argument 'newTrain.start' in moment.unix to get the standardized unix time, then
-       subtract one year to ensure you are not calculating with future date. */
-
   var firstTimeConverted = moment(newTrain.start, "HH:mm").subtract(1, "years");
   console.log("FIRST TIME: " + firstTimeConverted);
 
@@ -78,12 +75,6 @@ $("#submit-button").on("click", function(event) {
 
   // Alert the user to confirm the train has been added:
   alert("Train successfully added.");
-
-  // Clears all of the text-boxes
-  /* $("#train-name-input").val("");
-    $("#destination-input").val("");
-    $("#first-train-time-input").val("");
-    $("#frequency-input").val("");*/
 });
 
 // 3. Create Firebase event for adding employee to the database and a row in the html when a user adds an entry
