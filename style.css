@@ -1,10 +1,9 @@
+/* Override the default bootstrap css styling with !important
+   to adujst the jumbotron height. */
+
 .jumbotron {
     color: antiquewhite;
     background-color: rgb(3, 3, 109);
+    padding: 28px 32px !important;
 };
-
-#currentTime {
-    color: yellow;
-    font-family: 'Courier New', Courier, monospace;
-}
 
