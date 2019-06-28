@@ -1,5 +1,4 @@
-# HW7: Train Scheduler
-- - -
+# HW7: Train Scheduler (w/ Firebase)
 
 ## App Overview
 
@@ -22,12 +21,12 @@ This is a train schedule app that incorporates use of Firebase to host arrival a
 
 ## Technologies Used
 
-..* HTML
-..* CSS
-..* Bootstrap
-..* JavaScript
-..* jQuery
-..* Firebase
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
+* Firebase
 
 ## Bonus Challenges
 
