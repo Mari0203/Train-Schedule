@@ -103,6 +103,14 @@ database.ref().on("child_added", function(childSnapshot) {
   $("#train-schedule > tbody").append(newRow);
 });
 
+//======== Testing ============//
+// Editing data: Change the name of one of the train's desinations 
+// from misspelled 'Tidmoutj' to 'Tidmouth Harbor'.
+// database.ref("train-schedules-93ab6/-Lh8nCc8OtM7tv9XcNth").update({
+//   dest: "Tidmouth Harbor"
+// });
+
+
 // =============== BONUS ======================//
 // UPDATE and REMOVE buttons that allow the user to edit the row's element or remove the row.
 
