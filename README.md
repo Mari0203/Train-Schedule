@@ -9,11 +9,8 @@ This is a train schedule app that incorporates use of Firebase to host arrival a
 * When adding trains, administrators should be able to submit the following:
     
     * Train Name
-    
     * Destination 
-    
     * First Train Time -- in military time
-    
     * Frequency -- in minutes
   
 * The app calculates when the next train will arrive--which is to be relative to the current time. 
@@ -26,6 +23,7 @@ This is a train schedule app that incorporates use of Firebase to host arrival a
 * Bootstrap
 * JavaScript
 * jQuery
+* Moment.js
 * Firebase
 
 ## Bonus Challenges
